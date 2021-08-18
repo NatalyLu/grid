@@ -1,0 +1,33 @@
+.nav {
+  .block-center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 145px 1fr;
+  grid-column-gap: 50px;
+}
+
+.nav__list {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-self: flex-end;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin-right: 30px;
+    cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}

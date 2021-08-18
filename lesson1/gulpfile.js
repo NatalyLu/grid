@@ -44,6 +44,18 @@ const clean = () => {
 
 exports.clean = clean;
 
+
+// Copy
+const copy = (done) => {
+  gulp.src("img/*.jpg", {
+    base: ""
+  })
+  .pipe(gulp.dest("build/img"))
+  done();
+};
+
+exports.copy = copy;
+
 // Server
 const server = (done) => {
   sync.init({
@@ -74,6 +86,7 @@ const watcher = () => {
 // Build
 const build = gulp.series(
     clean,
+    copy,
     gulp.parallel(
       styles,
       html,
@@ -85,6 +98,7 @@ exports.build = build;
 // Default
 exports.default = gulp.series(
   clean,
+  copy,
   gulp.parallel(
     styles,
     html
