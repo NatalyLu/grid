@@ -1,0 +1,45 @@
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 16px;
+  line-height: 1.57rem;
+  * {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  // Даже при маленькой статье шапка и подвал будут прибиты к краям экрана
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  font-family: 'Manrope', 'Arial', sans-serif;
+  color: @dark-text-color;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.block-center {
+  max-width: @max-width;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
