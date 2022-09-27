@@ -1,6 +1,6 @@
-# Here are several modules with Grid layout practice
+# Description
 
-Each module contains one page only with html and css.
+Here are several modules with Grid layout practice. Each module contains one page only with html and css.
 
 I wanted to practice with less and gulp, so if you want to run the code you need to take a few simple steps (you can find them below).
 
