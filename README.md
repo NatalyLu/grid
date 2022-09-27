@@ -12,7 +12,7 @@ I wanted to practice with less and gulp, so if you want to run the code you need
 
 ## Quick start
 
-1. Go to the lesson folder
+1. Go to a folder with any lesson
 2. Сheck that you have a version of node 10.13.0 or higher
 3. And run the command <code>npm ci</code> to establish the necessary dependencies
 4. Next build the project with the <code>npm run start</code> comand
